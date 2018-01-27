@@ -8,20 +8,21 @@ import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 
 import com.bksoft.model.Student;
+import com.bksoft.model.Teacher;
 
 @WebService
 @SOAPBinding(style = Style.RPC)
 public interface TeacherService {
 
 	@WebMethod
-	String getHelloWorldAsString(String name);
+	String getTeachersDepartment(String name);
 
-	@WebResult(name = "Student")
+	@WebResult(name = "Teacher")
 	@WebMethod
-	Student getStudent(int id, @WebParam(name="sName", header = false) String name, String rollNo);
+	Teacher getTeacher(int id, @WebParam(name="tName", header = false) String name, String dpt);
 
-	@WebResult(name = "Student")
+	@WebResult(name = "Teacher")
 	@WebMethod
-	Student getStudentList(@WebParam(name="student")Student student);
+	Teacher getTeacherList(@WebParam(name="teacher")Teacher student);
 
 }

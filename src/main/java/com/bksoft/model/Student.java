@@ -51,4 +51,9 @@ public class Student {
 	public void setRollNo(String rollNo) {
 		this.rollNo = rollNo;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", rollNo=" + rollNo + "]";
+	}
 }

@@ -13,10 +13,10 @@ public class Teacher {
 
 	int id;
 
-	@XmlElement(name = "studentName")
+	@XmlElement(name = "name")
 	String name;
 
-	@XmlElement(name = "studentRollNo.")
+	@XmlElement(name = "dpt")
 	String dpt;
 
 	public Teacher(int id, String name, String dpt) {
