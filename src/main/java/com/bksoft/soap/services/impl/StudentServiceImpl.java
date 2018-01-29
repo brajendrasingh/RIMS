@@ -35,8 +35,8 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student getStudentById(int id) throws Exception {
-		Student s = dao.getStudentById(id);
-		return s;
+		Student student = dao.getStudentById(id);
+		return student;
 	}
 
 	@Override
