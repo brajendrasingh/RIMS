@@ -7,7 +7,7 @@
 	<name>Soap Service Example</name>
 	<packaging>war</packaging>
 
-	<!-- Developer information -->
+	<!-- Developers information -->
 	<developers>
 		<developer>
 			<name>Brajendra Singh</name>
