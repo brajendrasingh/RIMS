@@ -48,8 +48,8 @@ public class Student {
 		return rollNo;
 	}
 
-	public void setRollNo(String rollNo) {
-		this.rollNo = rollNo;
+	public void setRollNo(String rollNumber) {
+		this.rollNo = rollNumber;
 	}
 
 	@Override
